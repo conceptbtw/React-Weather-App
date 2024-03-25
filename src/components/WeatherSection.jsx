@@ -1,5 +1,5 @@
-export default function ForecastItem() {
-  const day = "Sunday";
+export default function WeatherSection() {
+  const city = "Lviv";
   const icon =
     "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/clear-day.svg";
   const temperature = 25;
@@ -7,10 +7,12 @@ export default function ForecastItem() {
   const wind = 1;
 
   return (
-    <li className="w-full p-2 flex flex-col justify-center items-center border rounded-xl">
-      <span className="w-full flex justify-center items-center">{day}</span>
-      <img className="w-full" src={icon} alt=""></img>
-      <ul className="w-full flex flex-col justify-center items-center">
+    <section className="w-full p-2 flex justify-between items-center border rounded-xl">
+      <div className="flex flex-col justify-center items-center">
+        <img className="w-32" src={icon} alt=""></img>
+      </div>
+      <span className="text-3xl font-bold">{city}</span>
+      <ul className="w-32 flex flex-col justify-center items-center">
         <li className="w-full flex justify-between items-center">
           <img
             className="w-8"
@@ -36,6 +38,6 @@ export default function ForecastItem() {
           <span className="">{wind} m/s</span>
         </li>
       </ul>
-    </li>
+    </section>
   );
 }
