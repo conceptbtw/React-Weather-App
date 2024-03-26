@@ -1,10 +1,13 @@
-export default function WeatherSection() {
-  const city = "Lviv";
-  const icon =
-    "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/clear-day.svg";
-  const temperature = 25;
-  const humidity = 50;
-  const wind = 1;
+import useIcon from "../hooks/useIcon";
+
+export default function WeatherSection({ weatherData }) {
+  const city = weatherData.name;
+  const description = weatherData.weather[0].description.toLowerCase();
+  const temperature = weatherData.main.temp.toFixed();
+  const humidity = weatherData.main.humidity;
+  const wind = weatherData.wind.speed.toFixed();
+
+  const icon = useIcon({ description });
 
   return (
     <section className="w-full p-2 flex justify-between items-center border rounded-xl">

@@ -1,10 +1,14 @@
-export default function ForecastItem() {
-  const day = "Sunday";
-  const icon =
-    "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/clear-day.svg";
-  const temperature = 25;
-  const humidity = 50;
-  const wind = 1;
+import useIcon from "../hooks/useIcon";
+
+export default function ForecastItem({ forecastData }) {
+  const date = new Date(forecastData.dt * 1000);
+  const day = date.toLocaleDateString("en-US", { weekday: "long" });
+  const description = forecastData.weather[0].description.toLowerCase();
+  const temperature = forecastData.main.temp.toFixed();
+  const humidity = forecastData.main.humidity;
+  const wind = forecastData.wind.speed.toFixed();
+
+  const icon = useIcon({ description });
 
   return (
     <li className="w-full p-2 flex flex-col justify-center items-center border rounded-xl">
