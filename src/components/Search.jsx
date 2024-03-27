@@ -20,8 +20,8 @@ export default function Search({ onSearch }) {
     >
       <i className="fa-solid fa-magnifying-glass"></i>
       <input
-        className="w-full outline-0 bg-transparent placeholder:text-white"
-        placeholder="Search..."
+        className="w-full outline-0 bg-transparent placeholder:text-white placeholder:opacity-75"
+        placeholder="Lviv, UA"
         name="search"
         type="text"
         value={value}
