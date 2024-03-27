@@ -8,6 +8,7 @@ export default {
       },
       colors: {
         bg: "#0080ff",
+        error: "#ff0000",
       },
     },
   },
