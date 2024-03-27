@@ -15,10 +15,10 @@ export default function Search({ onSearch }) {
 
   return (
     <form
-      className="max-w-64 w-full p-2 flex justify-center items-center gap-2 border border-white border-opacity-25 rounded-xl"
+      className="max-w-64 w-full p-4 flex justify-between items-center gap-2 border border-white border-opacity-25 rounded-full bg-white bg-opacity-25 shadow-[0_0_16px_0_rgba(255,255,255,0.25)] backdrop-blur"
       onSubmit={handleSubmit}
     >
-      <i className="fa-solid fa-magnifying-glass"></i>
+      <i className="fa-solid fa-magnifying-glass opacity-75"></i>
       <input
         className="w-full outline-0 bg-transparent placeholder:text-white placeholder:opacity-75"
         placeholder="Lviv, UA"
