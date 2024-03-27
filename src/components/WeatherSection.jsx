@@ -20,10 +20,10 @@ export default function WeatherSection({ weatherData }) {
   const wind = weatherData.wind.speed.toFixed();
 
   const icon = useIcon({ description });
-  const flag = `fi fi-${country}`;
+  const flag = `fi fi-${country} rounded`;
 
   return (
-    <section className="w-full p-4 flex flex-col justify-between items-center border rounded-xl">
+    <section className="w-full p-4 flex flex-col justify-between items-center border border-white border-opacity-25 rounded-xl bg-white bg-opacity-25 shadow-[0_0_16px_0_rgba(255,255,255,0.25)] backdrop-blur">
       <span className="">Today, {currentDateTime.toLocaleString()}</span>
       <div className="w-full flex justify-between items-center">
         <div className="min-w-20 max-w-32 w-full flex justify-start items-center">

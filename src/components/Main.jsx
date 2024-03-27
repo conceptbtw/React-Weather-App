@@ -7,7 +7,7 @@ export default function Main({ city }) {
   if (!city) {
     return (
       <main className="max-w-screen-md p-4 flex flex-1 flex-col justify-center items-center gap-4">
-        <span className="w-full p-4 flex justify-between items-center border rounded-xl">
+        <span className="w-full p-4 flex justify-between items-center border-white border-opacity-25 rounded-xl bg-white bg-opacity-25 backdrop-blur">
           Enter city...
         </span>
       </main>

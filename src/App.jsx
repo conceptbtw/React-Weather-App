@@ -11,7 +11,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-svh flex flex-col justify-center items-center text-white bg-black">
+    <div className="min-h-svh flex flex-col justify-center items-center text-white bg-[url('/src/assets/images/bg.svg')] bg-cover bg-center bg-bg">
       <Header onSearch={handleSearch} />
       <Main city={city} />
       <Footer />

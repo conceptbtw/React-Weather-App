@@ -16,7 +16,7 @@ export default function Search({ onSearch }) {
 
   return (
     <form
-      className="max-w-64 w-full p-2 flex justify-center items-center gap-2 border rounded-xl"
+      className="max-w-64 w-full p-2 flex justify-center items-center gap-2 border border-white border-opacity-25 rounded-xl"
       onSubmit={handleSubmit}
     >
       <FaMagnifyingGlass />
