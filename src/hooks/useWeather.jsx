@@ -34,7 +34,5 @@ export default function useWeather({ city }) {
     return () => {};
   }, [city]);
 
-  console.log(weatherData);
-
   return { weatherData, weatherLoading, weatherError };
 }

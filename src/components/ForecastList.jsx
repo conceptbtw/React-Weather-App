@@ -6,7 +6,7 @@ export default function ForecastList({ forecastData }) {
   );
 
   return (
-    <ul className="w-full flex justify-center items-center gap-2">
+    <ul className="w-full flex flex-wrap justify-center items-center gap-4 sm:grid-cols-4 md:grid-cols-5">
       {filteredForecastData.map((forecastData, index) => (
         <ForecastItem key={index} forecastData={forecastData} />
       ))}

@@ -11,9 +11,9 @@ export default function ForecastItem({ forecastData }) {
   const icon = useIcon({ description });
 
   return (
-    <li className="w-full p-2 flex flex-col justify-center items-center border rounded-xl">
+    <li className="min-w-32 w-full p-4 flex flex-1 flex-col justify-center items-center border rounded-xl">
       <span className="w-full flex justify-center items-center">{day}</span>
-      <img className="w-full" src={icon} alt=""></img>
+      <img className="max-w-32 w-full" src={icon} alt=""></img>
       <ul className="w-full flex flex-col justify-center items-center">
         <li className="w-full flex justify-between items-center">
           <img

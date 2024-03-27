@@ -11,17 +11,19 @@ export default function Search({ onSearch }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     onSearch(value);
+    setValue("");
   };
 
   return (
     <form
-      className="p-2 flex justify-center items-center gap-2 border rounded-xl"
+      className="max-w-64 w-full p-2 flex justify-center items-center gap-2 border rounded-xl"
       onSubmit={handleSubmit}
     >
       <FaMagnifyingGlass />
       <input
-        className="outline-0 bg-transparent placeholder:text-white"
+        className="w-full outline-0 bg-transparent placeholder:text-white"
         placeholder="Search..."
+        name="search"
         type="text"
         value={value}
         onChange={handleChange}

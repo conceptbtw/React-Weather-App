@@ -6,8 +6,8 @@ import Footer from "./components/Footer";
 export default function App() {
   const [city, setCity] = useState("");
 
-  const handleSearch = (searchedCity) => {
-    setCity(searchedCity);
+  const handleSearch = (c) => {
+    setCity(c);
   };
 
   return (

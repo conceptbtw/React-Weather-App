@@ -34,7 +34,5 @@ export default function useForecast({ city }) {
     return () => {};
   }, [city]);
 
-  console.log(forecastData);
-
   return { forecastData, forecastLoading, forecastError };
 }
