@@ -22,7 +22,11 @@ export default function Main({ city }) {
   return (
     <main className="max-w-screen-md p-4 flex flex-1 flex-col justify-center items-center gap-4">
       {weatherLoading && forecastLoading && (
-        <img className="w-32" src="/src/assets/images/loading.svg" alt=""></img>
+        <img
+          className="w-32"
+          src="./src/assets/images/loading.svg"
+          alt=""
+        ></img>
       )}
       {weatherError && forecastError && (
         <section className="w-64 h-32 p-4 flex flex-col justify-center items-center border border-error border-opacity-75 rounded-xl bg-error bg-opacity-75 shadow-[0_0_16px_0_rgba(255,0,0,0.75)] backdrop-blur">

@@ -34,7 +34,7 @@ export default function WeatherSection({ weatherData }) {
           <span className="">{city}</span>
         </div>
         <ul className="min-w-20 max-w-32 w-full flex flex-col justify-center items-center">
-          <li className="w-full flex justify-between items-center">
+          <li className="w-full flex justify-between items-center border-b border-white border-opacity-25">
             <img
               className="w-8"
               src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thermometer.svg"
@@ -42,7 +42,7 @@ export default function WeatherSection({ weatherData }) {
             ></img>
             <span className="">{temperature} °C</span>
           </li>
-          <li className="w-full flex justify-between items-center">
+          <li className="w-full flex justify-between items-center border-b border-white border-opacity-25">
             <img
               className="w-8"
               src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/humidity.svg"
@@ -50,7 +50,7 @@ export default function WeatherSection({ weatherData }) {
             ></img>
             <span className="">{humidity} %</span>
           </li>
-          <li className="w-full flex justify-between items-center">
+          <li className="w-full flex justify-between items-center border-b border-white border-opacity-25">
             <img
               className="w-8"
               src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/wind.svg"

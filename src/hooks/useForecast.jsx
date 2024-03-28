@@ -6,8 +6,8 @@ export default function useForecast({ city }) {
   const [forecastError, setForecastError] = useState(null);
   const [forecastLoading, setForecastLoading] = useState(true);
 
-  const apiKey = "ebac22e0a3d2dc0b9869d7b9bd94d79e";
-  const apiUrl = "https://api.openweathermap.org/data/2.5/forecast";
+  const apiKey = "bd5e378503939ddaee76f12ad7a97608";
+  const apiUrl = "https://api.openweathermap.org/data/2.5/forecast/daily";
 
   useEffect(() => {
     const fetchData = async () => {
@@ -17,6 +17,7 @@ export default function useForecast({ city }) {
         const response = await axios.get(apiUrl, {
           params: {
             q: city,
+            cnt: 7,
             appid: apiKey,
             units: "metric",
           },

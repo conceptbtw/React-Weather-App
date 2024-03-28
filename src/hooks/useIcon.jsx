@@ -67,6 +67,7 @@ export default function useIcon({ description }) {
       break;
 
     case "clear sky":
+    case "sky is clear":
       icon =
         "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/clear-day.svg";
       break;
